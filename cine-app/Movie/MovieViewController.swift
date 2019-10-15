@@ -32,6 +32,8 @@ class MovieViewController: UIViewController {
     
     var selectedFunctionIndex: Int?
     
+    var moviesVC: MoviesViewController?
+    
     var adultTickets: Int = 0 {
         willSet {
             adultTicketQuantityLabel.text = "\(newValue)"
@@ -65,6 +67,8 @@ class MovieViewController: UIViewController {
         setupUI()
         
     }
+    
+    
     
     func setupUI(){
         guard let room = room else { return }
@@ -124,6 +128,22 @@ class MovieViewController: UIViewController {
             sendAlertWithMessage("Por favor selecciona una función")
             return
         }
+        
+        var seats: [(Int, Seat)] = []
+        
+        if adultTickets > 0 {
+            seats.append((adultTickets, .adult))
+        }
+        if kidsTickets > 0 {
+            seats.append((kidsTickets, .kid))
+        }
+        
+        let ticket = Ticket(seats: seats, function: room!.functions[selectedFunction], total: total)
+        
+        moviesVC?.cart.append(ticket)
+        moviesVC?.updateCartIcon()
+        
+        self.dismiss(animated: true, completion: nil)
         
     }
     

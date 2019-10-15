@@ -22,6 +22,8 @@
 		D4AB2F6C23565CAA00171ED2 /* roomSelectedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F6B23565CAA00171ED2 /* roomSelectedDelegate.swift */; };
 		D4AB2F70235665FC00171ED2 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F6F235665FC00171ED2 /* MovieViewController.swift */; };
 		D4AB2F7223567F4F00171ED2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F7123567F4F00171ED2 /* Constants.swift */; };
+		D4AB2F74235684E500171ED2 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F73235684E500171ED2 /* Ticket.swift */; };
+		D4AB2F76235684F000171ED2 /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F75235684F000171ED2 /* Enumerators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		D4AB2F6B23565CAA00171ED2 /* roomSelectedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomSelectedDelegate.swift; sourceTree = "<group>"; };
 		D4AB2F6F235665FC00171ED2 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		D4AB2F7123567F4F00171ED2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D4AB2F73235684E500171ED2 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		D4AB2F75235684F000171ED2 /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				D4AB2F642356583900171ED2 /* ExampleData.swift */,
 				D4AB2F632356583900171ED2 /* Movie.swift */,
 				D4AB2F7123567F4F00171ED2 /* Constants.swift */,
+				D4AB2F73235684E500171ED2 /* Ticket.swift */,
+				D4AB2F75235684F000171ED2 /* Enumerators.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 				D4AB2F682356583900171ED2 /* CinemaRoom.swift in Sources */,
 				D4AB2F662356583900171ED2 /* Movie.swift in Sources */,
 				D4AB2F70235665FC00171ED2 /* MovieViewController.swift in Sources */,
+				D4AB2F76235684F000171ED2 /* Enumerators.swift in Sources */,
 				D4AB2F61235657EF00171ED2 /* MovieTableViewCell.swift in Sources */,
 				D4AB2F672356583900171ED2 /* ExampleData.swift in Sources */,
 				D4AB2F6C23565CAA00171ED2 /* roomSelectedDelegate.swift in Sources */,
+				D4AB2F74235684E500171ED2 /* Ticket.swift in Sources */,
 				D401294323564AC300E429D3 /* (null) in Sources */,
 				D401292F235648BE00E429D3 /* ViewController.swift in Sources */,
 				D401292B235648BE00E429D3 /* AppDelegate.swift in Sources */,

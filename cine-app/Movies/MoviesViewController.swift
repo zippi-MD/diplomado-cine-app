@@ -12,6 +12,9 @@ class MoviesViewController: UIViewController {
 
     @IBOutlet weak var table: UITableView!
     
+    var selectedRoom: CinemaRoom?
+    var cart: [Ticket] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,19 +22,29 @@ class MoviesViewController: UIViewController {
         table.delegate = self
         
         table.allowsSelection = false
+        
+        navigationItem.rightBarButtonItem = nil
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateCartIcon(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart"), landscapeImagePhone: UIImage(systemName: "cart"), style: .plain, target: self, action: #selector(test))
     }
-    */
+    
+    @objc func test(){
+        print(cart)
+    }
+
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMovie" {
+            let destination = segue.destination as! MovieViewController
+            destination.room = selectedRoom!
+            destination.moviesVC = self
+        }
+    }
+    
+    
 
 }
 
@@ -75,7 +88,8 @@ extension MoviesViewController: UITableViewDelegate {
 
 extension MoviesViewController: roomSelectedDelegate {
     func wasSelectedWithRoom(_ room: CinemaRoom) {
-        print(room)
+        selectedRoom = room
+        performSegue(withIdentifier: "showMovie", sender: nil)
     }
     
     

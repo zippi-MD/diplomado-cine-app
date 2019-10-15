@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A63030CC-BE23-452C-82F7-6CE9F06A0E3F"
+            uuid = "41785386-C13C-4741-B0A0-F23F2BC46691"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cine-app/Movie/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "addToCart(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
