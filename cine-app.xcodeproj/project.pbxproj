@@ -13,11 +13,9 @@
 		D4012932235648BE00E429D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4012930235648BE00E429D3 /* Main.storyboard */; };
 		D4012934235648C400E429D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4012933235648C400E429D3 /* Assets.xcassets */; };
 		D4012937235648C400E429D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4012935235648C400E429D3 /* LaunchScreen.storyboard */; };
-		D40129472356558600E429D3 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40129462356558600E429D3 /* MovieTableViewCell.swift */; };
-		D40129492356562700E429D3 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40129482356562700E429D3 /* MoviesViewController.swift */; };
-		D4012941235649DA00E429D3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4012940235649DA00E429D3 /* Movie.swift */; };
-		D401294323564AC300E429D3 /* CinemaRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401294223564AC300E429D3 /* CinemaRoom.swift */; };
-		D401294523564B5000E429D3 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401294423564B5000E429D3 /* ExampleData.swift */; };
+		D401294323564AC300E429D3 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D4AB2F61235657EF00171ED2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F5F235657EE00171ED2 /* MovieTableViewCell.swift */; };
+		D4AB2F62235657EF00171ED2 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F60235657EE00171ED2 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +27,8 @@
 		D4012933235648C400E429D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4012936235648C400E429D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4012938235648C400E429D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AB2F5F235657EE00171ED2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		D4AB2F60235657EE00171ED2 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 				D4012933235648C400E429D3 /* Assets.xcassets */,
 				D4012935235648C400E429D3 /* LaunchScreen.storyboard */,
 				D4012938235648C400E429D3 /* Info.plist */,
-				D40129462356558600E429D3 /* MovieTableViewCell.swift */,
-				D40129482356562700E429D3 /* MoviesViewController.swift */,
+				D4AB2F60235657EE00171ED2 /* MoviesViewController.swift */,
+				D4AB2F5F235657EE00171ED2 /* MovieTableViewCell.swift */,
 			);
 			path = "cine-app";
 			sourceTree = "<group>";
@@ -78,9 +78,6 @@
 		D401293F235649CC00E429D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D4012940235649DA00E429D3 /* Movie.swift */,
-				D401294223564AC300E429D3 /* CinemaRoom.swift */,
-				D401294423564B5000E429D3 /* ExampleData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,10 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D401294323564AC300E429D3 /* CinemaRoom.swift in Sources */,
+				D4AB2F61235657EF00171ED2 /* MovieTableViewCell.swift in Sources */,
+				D401294323564AC300E429D3 /* (null) in Sources */,
 				D401292F235648BE00E429D3 /* ViewController.swift in Sources */,
 				D401292B235648BE00E429D3 /* AppDelegate.swift in Sources */,
 				D401292D235648BE00E429D3 /* SceneDelegate.swift in Sources */,
+				D4AB2F62235657EF00171ED2 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
