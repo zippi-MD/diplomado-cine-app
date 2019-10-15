@@ -37,11 +37,11 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="43" id="Jd7-Pr-9Kq"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-Zp-5e2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-Zp-5e2">
                                                     <rect key="frame" x="213" y="62" width="181" height="177"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="177" id="PAl-rq-SoT"/>
@@ -56,9 +56,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="lar-0k-eFz"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <state key="normal" title="Ver Funciones">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="seeFunctions:" destination="Sg1-q0-pQF" eventType="touchUpInside" id="fBv-K1-P9b"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -80,6 +84,7 @@
                                             <outlet property="movieDescription" destination="rRr-Zp-5e2" id="gMe-83-Eti"/>
                                             <outlet property="movieImage" destination="OrS-bB-CAq" id="rVO-uk-dn3"/>
                                             <outlet property="movieTitle" destination="wwP-sg-LfM" id="rHk-MA-X2H"/>
+                                            <outlet property="viewFunctions" destination="i3V-Ud-xBt" id="1jF-eo-0fY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -19,6 +19,7 @@
 		D4AB2F662356583900171ED2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F632356583900171ED2 /* Movie.swift */; };
 		D4AB2F672356583900171ED2 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F642356583900171ED2 /* ExampleData.swift */; };
 		D4AB2F682356583900171ED2 /* CinemaRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F652356583900171ED2 /* CinemaRoom.swift */; };
+		D4AB2F6C23565CAA00171ED2 /* roomSelectedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F6B23565CAA00171ED2 /* roomSelectedDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D4AB2F632356583900171ED2 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D4AB2F642356583900171ED2 /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
 		D4AB2F652356583900171ED2 /* CinemaRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CinemaRoom.swift; sourceTree = "<group>"; };
+		D4AB2F6B23565CAA00171ED2 /* roomSelectedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomSelectedDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				D4012938235648C400E429D3 /* Info.plist */,
 				D4AB2F60235657EE00171ED2 /* MoviesViewController.swift */,
 				D4AB2F5F235657EE00171ED2 /* MovieTableViewCell.swift */,
+				D4AB2F6B23565CAA00171ED2 /* roomSelectedDelegate.swift */,
 			);
 			path = "cine-app";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				D4AB2F662356583900171ED2 /* Movie.swift in Sources */,
 				D4AB2F61235657EF00171ED2 /* MovieTableViewCell.swift in Sources */,
 				D4AB2F672356583900171ED2 /* ExampleData.swift in Sources */,
+				D4AB2F6C23565CAA00171ED2 /* roomSelectedDelegate.swift in Sources */,
 				D401294323564AC300E429D3 /* (null) in Sources */,
 				D401292F235648BE00E429D3 /* ViewController.swift in Sources */,
 				D401292B235648BE00E429D3 /* AppDelegate.swift in Sources */,

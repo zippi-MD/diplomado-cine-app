@@ -13,6 +13,11 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieImage: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieDescription: UILabel!
+    @IBOutlet weak var viewFunctions: UIButton!
+    
+    var delegate: roomSelectedDelegate?
+    
+    var room: CinemaRoom?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +29,10 @@ class MovieTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func seeFunctions(_ sender: Any) {
+        guard let room = room else {return}
+        delegate?.wasSelectedWithRoom(room)
+    }
+    
 }
