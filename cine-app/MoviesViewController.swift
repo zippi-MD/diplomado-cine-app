@@ -17,6 +17,8 @@ class MoviesViewController: UIViewController {
         
         table.dataSource = self
         table.delegate = self
+        
+        table.allowsSelection = false
         // Do any additional setup after loading the view.
     }
     
