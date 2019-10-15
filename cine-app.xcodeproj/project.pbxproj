@@ -15,6 +15,7 @@
 		D4012937235648C400E429D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4012935235648C400E429D3 /* LaunchScreen.storyboard */; };
 		D4012941235649DA00E429D3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4012940235649DA00E429D3 /* Movie.swift */; };
 		D401294323564AC300E429D3 /* CinemaRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401294223564AC300E429D3 /* CinemaRoom.swift */; };
+		D401294523564B5000E429D3 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401294423564B5000E429D3 /* ExampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D4012938235648C400E429D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4012940235649DA00E429D3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D401294223564AC300E429D3 /* CinemaRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaRoom.swift; sourceTree = "<group>"; };
+		D401294423564B5000E429D3 /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				D4012940235649DA00E429D3 /* Movie.swift */,
 				D401294223564AC300E429D3 /* CinemaRoom.swift */,
+				D401294423564B5000E429D3 /* ExampleData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				D401294323564AC300E429D3 /* CinemaRoom.swift in Sources */,
 				D401292F235648BE00E429D3 /* ViewController.swift in Sources */,
+				D401294523564B5000E429D3 /* ExampleData.swift in Sources */,
 				D401292B235648BE00E429D3 /* AppDelegate.swift in Sources */,
 				D4012941235649DA00E429D3 /* Movie.swift in Sources */,
 				D401292D235648BE00E429D3 /* SceneDelegate.swift in Sources */,
