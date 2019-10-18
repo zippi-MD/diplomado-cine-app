@@ -19,6 +19,8 @@ class MovieTableViewCell: UITableViewCell {
     
     var room: CinemaRoom?
     
+    var roomIndex: Int = 0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,7 +34,7 @@ class MovieTableViewCell: UITableViewCell {
     
     @IBAction func seeFunctions(_ sender: Any) {
         guard let room = room else {return}
-        delegate?.wasSelectedWithRoom(room)
+        delegate?.wasSelectedWithRoom(room, index: roomIndex)
     }
     
 }

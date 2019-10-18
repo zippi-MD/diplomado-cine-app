@@ -14,6 +14,13 @@
 		D4012934235648C400E429D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4012933235648C400E429D3 /* Assets.xcassets */; };
 		D4012937235648C400E429D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4012935235648C400E429D3 /* LaunchScreen.storyboard */; };
 		D401294323564AC300E429D3 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D41CD1B8235900C9008259C1 /* CandyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CD1B7235900C9008259C1 /* CandyTableViewCell.swift */; };
+		D41CD1BA235901E6008259C1 /* CandiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CD1B9235901E6008259C1 /* CandiesViewController.swift */; };
+		D41CD1BC235903C0008259C1 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CD1BB235903C0008259C1 /* Candy.swift */; };
+		D41CD1BE235909EB008259C1 /* CandyChangedValueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CD1BD235909EB008259C1 /* CandyChangedValueDelegate.swift */; };
+		D41CD1C12359117E008259C1 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CD1C02359117E008259C1 /* CartViewController.swift */; };
+		D41CD1C3235911B8008259C1 /* TicketResumeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CD1C2235911B8008259C1 /* TicketResumeTableViewCell.swift */; };
+		D41CD1C5235911C6008259C1 /* CandyResumeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CD1C4235911C6008259C1 /* CandyResumeTableViewCell.swift */; };
 		D4AB2F61235657EF00171ED2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F5F235657EE00171ED2 /* MovieTableViewCell.swift */; };
 		D4AB2F62235657EF00171ED2 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F60235657EE00171ED2 /* MoviesViewController.swift */; };
 		D4AB2F662356583900171ED2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB2F632356583900171ED2 /* Movie.swift */; };
@@ -35,6 +42,13 @@
 		D4012933235648C400E429D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4012936235648C400E429D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4012938235648C400E429D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41CD1B7235900C9008259C1 /* CandyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyTableViewCell.swift; sourceTree = "<group>"; };
+		D41CD1B9235901E6008259C1 /* CandiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandiesViewController.swift; sourceTree = "<group>"; };
+		D41CD1BB235903C0008259C1 /* Candy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		D41CD1BD235909EB008259C1 /* CandyChangedValueDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyChangedValueDelegate.swift; sourceTree = "<group>"; };
+		D41CD1C02359117E008259C1 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		D41CD1C2235911B8008259C1 /* TicketResumeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketResumeTableViewCell.swift; sourceTree = "<group>"; };
+		D41CD1C4235911C6008259C1 /* CandyResumeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyResumeTableViewCell.swift; sourceTree = "<group>"; };
 		D4AB2F5F235657EE00171ED2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		D4AB2F60235657EE00171ED2 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		D4AB2F632356583900171ED2 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -77,13 +91,15 @@
 		D4012929235648BE00E429D3 /* cine-app */ = {
 			isa = PBXGroup;
 			children = (
+				D41CD1BF2359115D008259C1 /* Cart */,
+				D41CD1B623590090008259C1 /* Candies */,
 				D4AB2F6E235665E200171ED2 /* Movie */,
 				D4AB2F6D235665D100171ED2 /* Movies */,
 				D401293F235649CC00E429D3 /* Model */,
 				D401292A235648BE00E429D3 /* AppDelegate.swift */,
 				D401292C235648BE00E429D3 /* SceneDelegate.swift */,
-				D401292E235648BE00E429D3 /* ViewController.swift */,
 				D4012930235648BE00E429D3 /* Main.storyboard */,
+				D401292E235648BE00E429D3 /* ViewController.swift */,
 				D4012933235648C400E429D3 /* Assets.xcassets */,
 				D4012935235648C400E429D3 /* LaunchScreen.storyboard */,
 				D4012938235648C400E429D3 /* Info.plist */,
@@ -100,8 +116,29 @@
 				D4AB2F7123567F4F00171ED2 /* Constants.swift */,
 				D4AB2F73235684E500171ED2 /* Ticket.swift */,
 				D4AB2F75235684F000171ED2 /* Enumerators.swift */,
+				D41CD1BB235903C0008259C1 /* Candy.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D41CD1B623590090008259C1 /* Candies */ = {
+			isa = PBXGroup;
+			children = (
+				D41CD1B7235900C9008259C1 /* CandyTableViewCell.swift */,
+				D41CD1B9235901E6008259C1 /* CandiesViewController.swift */,
+				D41CD1BD235909EB008259C1 /* CandyChangedValueDelegate.swift */,
+			);
+			path = Candies;
+			sourceTree = "<group>";
+		};
+		D41CD1BF2359115D008259C1 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				D41CD1C02359117E008259C1 /* CartViewController.swift */,
+				D41CD1C2235911B8008259C1 /* TicketResumeTableViewCell.swift */,
+				D41CD1C4235911C6008259C1 /* CandyResumeTableViewCell.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		D4AB2F6D235665D100171ED2 /* Movies */ = {
@@ -193,20 +230,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41CD1C5235911C6008259C1 /* CandyResumeTableViewCell.swift in Sources */,
 				D4AB2F682356583900171ED2 /* CinemaRoom.swift in Sources */,
 				D4AB2F662356583900171ED2 /* Movie.swift in Sources */,
+				D41CD1C3235911B8008259C1 /* TicketResumeTableViewCell.swift in Sources */,
 				D4AB2F70235665FC00171ED2 /* MovieViewController.swift in Sources */,
 				D4AB2F76235684F000171ED2 /* Enumerators.swift in Sources */,
+				D41CD1BC235903C0008259C1 /* Candy.swift in Sources */,
+				D41CD1BE235909EB008259C1 /* CandyChangedValueDelegate.swift in Sources */,
 				D4AB2F61235657EF00171ED2 /* MovieTableViewCell.swift in Sources */,
 				D4AB2F672356583900171ED2 /* ExampleData.swift in Sources */,
 				D4AB2F6C23565CAA00171ED2 /* roomSelectedDelegate.swift in Sources */,
+				D41CD1C12359117E008259C1 /* CartViewController.swift in Sources */,
 				D4AB2F74235684E500171ED2 /* Ticket.swift in Sources */,
 				D401294323564AC300E429D3 /* (null) in Sources */,
 				D401292F235648BE00E429D3 /* ViewController.swift in Sources */,
 				D401292B235648BE00E429D3 /* AppDelegate.swift in Sources */,
 				D401292D235648BE00E429D3 /* SceneDelegate.swift in Sources */,
+				D41CD1BA235901E6008259C1 /* CandiesViewController.swift in Sources */,
 				D4AB2F62235657EF00171ED2 /* MoviesViewController.swift in Sources */,
 				D4AB2F7223567F4F00171ED2 /* Constants.swift in Sources */,
+				D41CD1B8235900C9008259C1 /* CandyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,12 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var table: UITableView!
     
     var selectedRoom: CinemaRoom?
-    var cart: [Ticket] = []
+    var selectedRoomIndex: Int = 0
+    var cart: [Ticket] = [] {
+        willSet {
+            cartTickets = newValue
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +37,7 @@ class MoviesViewController: UIViewController {
     }
     
     @objc func test(){
-        print(cart)
+        performSegue(withIdentifier: "goToCart", sender: nil)
     }
 
 
@@ -41,6 +46,7 @@ class MoviesViewController: UIViewController {
             let destination = segue.destination as! MovieViewController
             destination.room = selectedRoom!
             destination.moviesVC = self
+            destination.selectedRoomIndex = selectedRoomIndex
         }
     }
     
@@ -68,6 +74,7 @@ extension MoviesViewController: UITableViewDataSource {
         
         movieCell.room = room
         movieCell.delegate = self
+        movieCell.roomIndex = indexPath.row
         
         movieCell.viewFunctions.layer.cornerRadius = 5.0
         
@@ -87,8 +94,9 @@ extension MoviesViewController: UITableViewDelegate {
 
 
 extension MoviesViewController: roomSelectedDelegate {
-    func wasSelectedWithRoom(_ room: CinemaRoom) {
+    func wasSelectedWithRoom(_ room: CinemaRoom, index: Int) {
         selectedRoom = room
+        selectedRoomIndex = index
         performSegue(withIdentifier: "showMovie", sender: nil)
     }
     

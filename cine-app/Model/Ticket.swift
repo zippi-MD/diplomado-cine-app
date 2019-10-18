@@ -11,5 +11,6 @@ import Foundation
 struct Ticket {
     let seats: [(Int, Seat)]
     let function: String
+    let movie: Movie
     let total: Double
 }

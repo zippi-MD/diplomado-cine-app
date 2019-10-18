@@ -21,6 +21,8 @@ class MovieViewController: UIViewController {
     @IBOutlet weak var adultTicketPriceLabel: UILabel!
     @IBOutlet weak var kidTicketPriceLabel: UILabel!
     
+    @IBOutlet weak var remainingTicketsLabel: UILabel!
+    
     @IBOutlet weak var totalBackgroundView: UIView!
     
     @IBOutlet weak var totalLabel: UILabel!
@@ -30,6 +32,8 @@ class MovieViewController: UIViewController {
     
     var room: CinemaRoom?
     
+    var selectedRoomIndex: Int = 0
+    
     var selectedFunctionIndex: Int?
     
     var moviesVC: MoviesViewController?
@@ -38,11 +42,17 @@ class MovieViewController: UIViewController {
         willSet {
             adultTicketQuantityLabel.text = "\(newValue)"
         }
+        didSet {
+            updateRemainigTickets()
+        }
     }
     
     var kidsTickets: Int = 0 {
         willSet {
             childTicketQuantityLabel.text = "\(newValue)"
+        }
+        didSet {
+            updateRemainigTickets()
         }
     }
     
@@ -54,6 +64,16 @@ class MovieViewController: UIViewController {
             }
             else {
                 totalBackgroundView.isHidden = false
+            }
+        }
+    }
+    
+    var remainingTickets: Int = 0 {
+        willSet {
+            remainingTicketsLabel.text = "\(newValue)"
+            
+            if newValue < 0 {
+                sendAlertOfInsuficientTickets()
             }
         }
     }
@@ -85,15 +105,30 @@ class MovieViewController: UIViewController {
         adultTicketPriceLabel.text = "$\(Constants.adultTicketPrice)"
         kidTicketPriceLabel.text = "$\(Constants.kidTicketPrice)"
         
+        remainingTickets = room.seats
+        
     }
     
     func updateTotal(){
         total = Double(kidsTickets) * Constants.kidTicketPrice + Double(adultTickets) * Constants.adultTicketPrice
     }
     
+    func updateRemainigTickets() {
+        remainingTickets = room!.seats - (kidsTickets + adultTickets)
+    }
+    
     func sendAlertWithMessage(_ message: String){
         let alert = UIAlertController(title: "Ups...", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
+    
+    func sendAlertOfInsuficientTickets(){
+        let alert = UIAlertController(title: "Ups...", message: "Lo sentimos, no hay suficientes boletos en la sala", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default) { (_) in
+            self.dismiss(animated: true, completion: nil)
+        }
         alert.addAction(action)
         present(alert, animated: true)
     }
@@ -107,6 +142,11 @@ class MovieViewController: UIViewController {
         case 1:
             movieGeneralDescription.isHidden = true
             selectTickets.isHidden = false
+            
+            if remainingTickets <= 0{
+                sendAlertOfInsuficientTickets()
+            }
+            
         default:
             return
         }
@@ -138,12 +178,17 @@ class MovieViewController: UIViewController {
             seats.append((kidsTickets, .kid))
         }
         
-        let ticket = Ticket(seats: seats, function: room!.functions[selectedFunction], total: total)
+        let ticket = Ticket(seats: seats, function: room!.functions[selectedFunction], movie: room!.movie, total: total)
         
         moviesVC?.cart.append(ticket)
         moviesVC?.updateCartIcon()
         
+        cinemaRooms[selectedRoomIndex] = CinemaRoom(movie: room!.movie, seats: remainingTickets, roomNumber: 88, functions: room!.functions)
+        
+        moviesVC?.table.reloadData()
+        
         self.dismiss(animated: true, completion: nil)
+    
         
     }
     

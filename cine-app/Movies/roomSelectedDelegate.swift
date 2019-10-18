@@ -9,5 +9,5 @@
 import Foundation
 
 protocol roomSelectedDelegate {
-    func wasSelectedWithRoom(_ room: CinemaRoom)
+    func wasSelectedWithRoom(_ room: CinemaRoom, index: Int)
 }
